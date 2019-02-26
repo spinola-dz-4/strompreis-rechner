@@ -28,7 +28,7 @@
                 Ihr Standort hilft uns bei der Berechnung, wie viel Solarstrom Sie erzeugen können.
             </div>
             <div class="">
-            	<a href="#" class="">
+            	<a href="button" class="">
             		<span class="weiter weiter-1">Weiter</span>
             	</a>
             </div>
@@ -55,7 +55,7 @@
                 </label>
             </div>
             <div class="">
-            	<a href="#" class="">
+            	<a href="" class="button">
             		<span class="weiter weiter-2">Weiter</span>
             	</a>
             </div>
@@ -98,7 +98,7 @@
                 </label>
             </div>
             <div class="">
-            	<a href="#calculator-result-calculated" data-scroll="" class="">
+            	<a href=""  class="button">
             		<span class="weiter weiter-ergebnis">Ergebnis</span>
             	</a>
             </div>
