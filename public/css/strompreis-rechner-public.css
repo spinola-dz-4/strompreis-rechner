@@ -2,3 +2,19 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+
+div#str{
+	width: 1133px;
+	margin: auto;
+}
+
+div#str div.frage{
+    text-align: center;
+}
+
+div#str input.underscore{
+	text-align: center;
+	width: 100%;
+	border: none;
+    border-bottom: 1px solid #23e775;
+}
