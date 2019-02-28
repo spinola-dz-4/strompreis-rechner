@@ -3,18 +3,139 @@
  * included in this file.
  */
 
-div#str{
+form#str{
 	width: 1133px;
 	margin: auto;
 }
 
-div#str div.frage{
+form#str div.frage{
     text-align: center;
 }
 
-div#str input.underscore{
-	text-align: center;
+
+form#str div.hinweis{
+    font-size: 18px;
+    color: #9b9b9b;
+    padding: 20px;
+}
+
+
+
+/* 
+ * Text Input
+ */
+
+form#str input.underscore{
 	width: 100%;
-	border: none;
+    padding: 0;
+    border: 0;
+    color: #23e775;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: transparent;
     border-bottom: 1px solid #23e775;
+    outline: 0;
+}
+
+
+/* 
+ * Buttons 
+ */
+
+form#str .button{
+
+	display: block;
+    margin: 10px auto;
+
+	border-radius: 0px;
+	border: 1px solid #202020;
+	background: none;
+	color: #202020;
+	transition: 0.2s;
+
+	width: 180px;
+    padding: 5px;
+    font-weight: normal;
+
+}
+
+form#str .button:hover{
+	border: 1px solid #23e775;
+	background: white;
+	color: #23e775;
+}
+
+form#str .button.back{
+	background: none;
+	border: 0px;
+	color: #202020;
+	font-size: small;
+	font-weight: normal;
+}
+
+form#str .button.back:hover{
+	color: #23e775;
+}
+
+/* 
+ * Radio Buttons 
+ */
+
+form#str [type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* 
+ * Text Radio Buttons 
+ */
+
+form#str [type=radio] + span {
+  cursor: pointer;
+}
+
+form#str [type=radio] + span:hover {
+  color: #23e775;
+}
+
+form#str [type=radio]:checked + span{
+  font-size: larger;
+  text-decoration: underline;
+  color: #23e775; 
+}
+
+form#str .eigentuemer-label{
+	padding: 20px;
+}
+
+/* 
+ * Image Radio Buttons 
+ */
+
+form#str [type=radio] + img {
+  cursor: pointer;
+  filter: grayscale(100%);
+  filter: brightness(20%);
+  transition: 0.2s;
+}
+
+form#str [type=radio]:checked + img {
+  filter: grayscale(0%);
+}
+
+form#str div.consumption-label-wrap{
+	margin-top: 20px;
+}
+
+form#str label.consumption-label{
+	width: 100%;
+    display: inline;
+}
+
+form#str label.consumption-label img{
+	height: 50px;
+    margin-right: 20px;
 }

@@ -97,6 +97,12 @@ class Strompreis_Rechner_Public {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/strompreis-rechner-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/strompreis-rechner-public.js', array( 'jquery-validate' ), $this->version, false );
+		wp_enqueue_script( "jquery-migrate", plugin_dir_url( __FILE__ ) . 'js/jquery-migrate.min.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( "jquery-ui", plugin_dir_url( __FILE__ ) . 'js/jquery-ui.min.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( "jquery-animateNumber", plugin_dir_url( __FILE__ ) . 'js/jquery.animateNumber.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( "jquery-validate", plugin_dir_url( __FILE__ ) . 'js/jquery.validate.min.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name . "-functions", plugin_dir_url( __FILE__ ) . 'js/strompreis-rechner-public-functions.js', array( 'jquery-validate' ), $this->version, false );
 
 	}
 

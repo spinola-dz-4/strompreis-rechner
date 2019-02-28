@@ -29,30 +29,4 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 
-	$(function() {
-
-		/*
-		 * Initiales Hide/Show der Fragen
-		 */
-
-		$("div.frage.frage-1").show();
-		$("div.frage.frage-2").hide();
-		$("div.frage.frage-3").hide();
-		
-
-		/*
-		 * Clicks auf weiter
-		 */
-
-		$('.weiter.weiter-1').on('click tap', function() {
-			$("div.frage.frage-1").hide();
-			$("div.frage.frage-2").show();
-		});
-
-		$('.weiter.weiter-2').on('click tap', function() {
-			$("div.frage.frage-2").hide();
-			$("div.frage.frage-3").show();
-		});
-	 
-	});
-})( jQuery );
+})( jQuery ); // end jQuery
