@@ -19,6 +19,10 @@ form#str div.hinweis{
     padding: 20px;
 }
 
+form#str p{
+	line-height: 30px;
+}
+
 
 
 /* 
@@ -57,12 +61,26 @@ form#str .button{
 	width: 180px;
     padding: 5px;
     font-weight: normal;
+    cursor: pointer;
 
 }
 
 form#str .button:hover{
 	border: 1px solid #23e775;
 	background: white;
+	color: #23e775;
+}
+
+form#str .button i{
+	padding-right: 15px;
+	padding-left: 0px;
+	color: #202020;
+	transition: 0.2s;
+}
+
+form#str .button:hover i{
+	padding-right: 0px;
+	padding-left: 15px;
 	color: #23e775;
 }
 
@@ -93,18 +111,20 @@ form#str [type=radio] {
  * Text Radio Buttons 
  */
 
-form#str [type=radio] + span {
+form#str input.text-radio[type="radio"] + span {
   cursor: pointer;
+  font-size: 40px;
 }
 
-form#str [type=radio] + span:hover {
-  color: #23e775;
+form#str input.text-radio[type="radio"] + span:hover {
+	color: #23e775;    
 }
 
-form#str [type=radio]:checked + span{
+form#str input.text-radio[type="radio"]:checked + span{
   font-size: larger;
   text-decoration: underline;
   color: #23e775; 
+  font-size: 50px;
 }
 
 form#str .eigentuemer-label{
@@ -115,14 +135,15 @@ form#str .eigentuemer-label{
  * Image Radio Buttons 
  */
 
-form#str [type=radio] + img {
+form#str input.image-radio[type="radio"] + img {
   cursor: pointer;
   filter: grayscale(100%);
   filter: brightness(20%);
   transition: 0.2s;
 }
 
-form#str [type=radio]:checked + img {
+form#str input.image-radio[type="radio"]:hover + img,
+form#str input.image-radio[type="radio"]:checked + img{
   filter: grayscale(0%);
 }
 

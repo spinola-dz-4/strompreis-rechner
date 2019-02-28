@@ -33,11 +33,10 @@
 	            <div class="hinweis">
 	                Ihr Standort hilft uns bei der Berechnung, wie viel Solarstrom Sie erzeugen können.
 	            </div>
-	            <div class="button weiter weiter-1">Weiter</div>
+	            <div class="button weiter weiter-1"><i class="fa fa-arrow-right dz4-arrow" aria-hidden="true" ></i> Weiter</div>
 	        </div>
 	    </div>
 	</div>
-
 
 
 	<div class="frage frage-2">
@@ -48,21 +47,19 @@
 	            </p>
 	            <div class="">
 	                <label class="eigentuemer-label">
-	                    <input type="radio" name="sunny-roof" checked="checked" class="">
+	                    <input type="radio" name="sunny-roof" checked="checked" class="text-radio">
 	                    <span class="Controls-indicator">Ja</span>
 	                </label>
 	                <label class="eigentuemer-label">
-	                    <input type="radio" name="sunny-roof" class="">
+	                    <input type="radio" name="sunny-roof" class="text-radio">
 	                    <span class="Controls-indicator">Nein</span>
 	                </label>
 	            </div> 
-	            <div class="button weiter weiter-2">Weiter</div>
+	            <div class="button weiter weiter-2"><i class="fa fa-arrow-right dz4-arrow" aria-hidden="true" ></i> Weiter</div>
 	            <div class="button back back-2">Zurück</div>
 	        </div>
 	    </div>
 	</div>
-
-
 
 
 	<div class= "frage frage-3">
@@ -73,23 +70,23 @@
 	            <input id="consumption" name="consumption" type="number" placeholder="kWh" required="required" pattern="[0-9]{5}" title="Bitte geben Sie Ihren Jahresverbrauch in kWh an." class="underscore">
 	            <div class="consumption-label-wrap">
 	                <label class="consumption-label consumption-label-1" kwh="1500">
-	                    <input type="radio" name="typical-conumption" class="">
+	                    <input type="radio" name="typical-consumption" class="image-radio">
 	                    <img src="<?= plugin_dir_url( dirname( __FILE__ ) ) . "img/01_gruen.png" ?>">
 	                </label>
 	                <label class="consumption-label consumption-label-2"  kwh="2500">
-	                    <input type="radio" name="typical-conumption" class="">
+	                    <input type="radio" name="typical-consumption" class="image-radio">
 	                    <img src="<?= plugin_dir_url( dirname( __FILE__ ) ) . "img/02_gruen.png" ?>">
 	                </label>
 	                <label class="consumption-label consumption-label-3"  kwh="4000">
-	                    <input type="radio" name="typical-conumption" class="">
+	                    <input type="radio" name="typical-consumption" class="image-radio">
 	                    <img src="<?= plugin_dir_url( dirname( __FILE__ ) ) . "img/03_gruen.png" ?>">
 	                </label>
 	                <label class="consumption-label consumption-label-4"  kwh="6000">
-	                    <input type="radio" name="typical-conumption" class="">
+	                    <input type="radio" name="typical-consumption" class="image-radio">
 	                    <img src="<?= plugin_dir_url( dirname( __FILE__ ) ) . "img/04_gruen.png" ?>">
 	                </label>
 	            </div>
-	            <div class="button weiter weiter-ergebnis">Ergebnis</div>
+	            <div class="button weiter weiter-ergebnis"><i class="fa fa-arrow-right dz4-arrow" aria-hidden="true" ></i> Ergebnis</div>
 	            <div class="button back back-ergebnis">Zurück</div>
 	        </div>
 	    </div>

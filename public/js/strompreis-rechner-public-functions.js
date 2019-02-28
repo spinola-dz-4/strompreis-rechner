@@ -13,7 +13,7 @@ if ( !($("#str").length == 0) ){
 	$("div.frage.frage-2").hide();
 	$("div.frage.frage-3").hide();
 
-	$("div.frage").show();
+	// $("div.frage").show();
 
 	/*
 	 * Validation
@@ -120,10 +120,12 @@ if ( !($("#str").length == 0) ){
 		);
 
 		/* stop jQuery from firing this function twice */
-		evt.stopPropagation(); evt.preventDefault(); evt.stopImmediatePropagation();
+		$(this).find("input[type=radio]").prop('checked', true);
+		evt.stopPropagation(); 
+		evt.preventDefault(); 
+		evt.stopImmediatePropagation();
 
 	});
-
 
 
 } // end if DOM #str exists
